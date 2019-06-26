@@ -41,7 +41,7 @@ When you need to test more than one case, you may use `else if`:
 ![flowchart](if-else-flowchart.jpg)
 
 ```javascript
-const favoritePet = 'cat';
+let favoritePet = 'cat';
 
 if (favoritePet === 'dog') {
   console.log('Achoo!!! Im allergic to dogs.');
