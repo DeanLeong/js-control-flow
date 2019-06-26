@@ -82,7 +82,7 @@ If `yourMoney` is less than `price`, log the message "You cannot buy a cat.  You
 JavaScript has a ternary operator for conditional expressions. Where an `if ... else` **statement** conditionaly runs code, a ternary is used to make an **expression** which returns a value conditionally. Consider the difference when distinguishing between a statement and an expression:
 
 ```javascript
-const age = 12
+let age = 12
 
 let allowed
 
@@ -96,9 +96,9 @@ console.log(allowed)
 ```
 
 ```javascript
-const age = 12
+let age = 12
 
-const allowed = (age > 18) ? 'yes' : 'no'
+let allowed = (age > 18) ? 'yes' : 'no'
 
 console.log(allowed)
 //=> "no"
@@ -109,7 +109,7 @@ console.log(allowed)
 The switch statement can be used for multiple branches based on `===` equality:
 
 ```javascript
-const food = 'apple';
+let food = 'apple';
 
 switch(food) {
   case 'pear':
