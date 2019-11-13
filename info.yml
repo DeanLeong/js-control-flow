@@ -1,0 +1,3 @@
+type: lesson
+prereqs: basic data types
+notes: Covers if, switch, for, while. (Does not assume knowledge of arrays or functions)
