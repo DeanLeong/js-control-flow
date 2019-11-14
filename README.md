@@ -106,7 +106,29 @@ console.log(allowed)
 
 ## Switch Statement
 
-The switch statement can be used for multiple branches based on `===` equality:
+The switch statement can be used for multiple branches based on `===` equality.
+
+Consider the following if/else if/else statement:
+
+```javascript
+let food = 'apple';
+
+if (food === 'pear'){
+  console.log('I like pears');
+} else if (food === 'apple'){
+  console.log('I like apples'); 
+} else if (food === 'orange' || food === 'clem' ){
+  console.log('mmm... citrus');
+} else {
+  console.log('idk what that is');
+}
+
+```
+
+Notice how for each conditional, we are doing an equality test. Given that, we can convert the above to the following equivalent switch statement:
+
+
+
 
 ```javascript
 let food = 'apple';
