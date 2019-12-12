@@ -22,7 +22,7 @@ if (/* whatever's in here is true */) {
 }
 ```
 
-... means run the `code` block if `expr` is truthy
+... means run the `code` block if the expression is truthy
 
 ```javascript
 if (true) {
@@ -58,7 +58,10 @@ When you're comparing variables to values, make sure you're using  `===` -- not 
 
 ### 🚀 Independent Practice!!
 
-Touch a new javascript file -- `lecture-practice.js` -- and work in that. Remember, you can use Node to run the file: `node lecture-practice.js`.
+Touch a new javascript file -- `lecture-practice.js` -- and work in that. Remember, you can use Node to run the file: 
+```bash
+node lecture-practice.js
+```
 
 Let's see if you have enough money to buy a cat.
 
@@ -77,7 +80,9 @@ If `yourMoney` is less than `price`, log the message "You cannot buy a cat.  You
 
 ### Ternary Operator
 
-`(condition) ? ifTrue : ifFalse`
+```js
+(condition) ? ifTrue : ifFalse
+```
 
 JavaScript has a ternary operator for conditional expressions. Where an `if ... else` **statement** conditionaly runs code, a ternary is used to make an **expression** which returns a value conditionally. Consider the difference when distinguishing between a statement and an expression:
 
@@ -98,7 +103,7 @@ console.log(allowed)
 ```javascript
 let age = 12
 
-let allowed = (age > 18) ? 'yes' : 'no'
+const allowed = (age > 18) ? 'yes' : 'no'
 
 console.log(allowed)
 //=> "no"
