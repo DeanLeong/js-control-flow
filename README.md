@@ -133,7 +133,6 @@ switch(food) {
     console.log('I like apples');
     break;
   case 'orange':
-  case 'clem':
     console.log('mmm... citrus');
     break;
   default:
