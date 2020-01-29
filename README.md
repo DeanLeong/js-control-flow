@@ -14,7 +14,7 @@
 
 ## if...else statement
 
-`if` statements are an extremely common way to manage application logic -- what happens when, etc.
+`if` statements are an extremely common way to manage application logic —— what happens when, etc.
 
 ```js
 if (/* whatever's in here is true */) {
@@ -22,7 +22,7 @@ if (/* whatever's in here is true */) {
 }
 ```
 
-... means run the `code` block if the expression is truthy
+... means run the `code` block if `expr` is truthy
 
 ```javascript
 if (true) {
@@ -41,7 +41,7 @@ When you need to test more than one case, you may use `else if`:
 ![flowchart](if-else-flowchart.jpg)
 
 ```javascript
-let favoritePet = 'cat';
+const favoritePet = 'cat';
 
 if (favoritePet === 'dog') {
   console.log('Achoo!!! Im allergic to dogs.');
@@ -54,40 +54,49 @@ if (favoritePet === 'dog') {
 //=> Yeah!! Cats are the best.
 ```
 
-When you're comparing variables to values, make sure you're using  `===` -- not `=`. If you use `=`, you're reassigning the variable, instead of checking it for equality.
+When you're comparing variables to values, make sure you're using  `===` —— not `=`. If you use `=`, you're reassigning the variable, instead of checking it for equality.
 
 ### 🚀 Independent Practice!!
 
-Touch a new javascript file -- `lecture-practice.js` -- and work in that. Remember, you can use Node to run the file: 
-```bash
-node lecture-practice.js
+Touch a new javascript file —— `if-else-practice.js` —— and work in that. 
+
+Let's see if you have enough money to buy a cat! Using the following terms, create an `if / else if / else` conditional statement:
+
+- If `yourMoney` is equal to `catPrice`, log the message "You have just enough to buy a cat!"
+- If `yourMoney` is more than `catPrice`, log the message "You can buy a cat and will have <X> dollars left over"
+- If `yourMoney` is less than `catPrice`, log the message "You cannot buy a cat.  You need <X> more dollars :("
+
+Check your code with the following variables (Remember, you can use Node to run the file in your terminal: `node if-else-practice.js`)
+
+1) 
+```js
+const yourMoney = 50
+const catPrice = 100
 ```
 
-Let's see if you have enough money to buy a cat.
-
-If `yourMoney` is equal to `price`, log the message "You have just enough to buy a cat!"
-If `yourMoney` is more than `price`, log the message "You can buy a cat and will have <X> dollars left over"
-If `yourMoney` is less than `price`, log the message "You cannot buy a cat.  You need <X> more dollars :("
-
-```javascript
-// Put these lines into your `lecture-practice.js` file.
-
-  const yourMoney = 50;
-  const catPrice = 100;
-
-  // YOUR CODE HERE
+2) 
+```js
+const yourMoney = 100
+const catPrice = 100
 ```
+
+3) 
+```js
+const yourMoney = 200
+const catPrice = 100
+```
+
+If you get stuck, talk to your neighbor and see if you can work it out.
+
 
 ### Ternary Operator
 
-```js
-(condition) ? ifTrue : ifFalse
-```
+`(condition) ? ifTrue : ifFalse`
 
-JavaScript has a ternary operator for conditional expressions. Where an `if ... else` **statement** conditionaly runs code, a ternary is used to make an **expression** which returns a value conditionally. Consider the difference when distinguishing between a statement and an expression:
+JavaScript has a ternary operator for quick conditional expressions. Where an `if ... else` **statement** conditionaly runs code, a ternary is used to make an **expression** which returns a value conditionally. Consider the difference when distinguishing between a statement and an expression:
 
 ```javascript
-let age = 12
+const age = 12
 
 let allowed
 
@@ -101,7 +110,7 @@ console.log(allowed)
 ```
 
 ```javascript
-let age = 12
+const age = 12
 
 const allowed = (age > 18) ? 'yes' : 'no'
 
@@ -111,32 +120,10 @@ console.log(allowed)
 
 ## Switch Statement
 
-The switch statement can be used for multiple branches based on `===` equality.
-
-Consider the following if/else if/else statement:
+The switch statement can be used for multiple branches based on `===` equality:
 
 ```javascript
-let food = 'apple';
-
-if (food === 'pear'){
-  console.log('I like pears');
-} else if (food === 'apple'){
-  console.log('I like apples'); 
-} else if (food === 'orange' || food === 'clem' ){
-  console.log('mmm... citrus');
-} else {
-  console.log('idk what that is');
-}
-
-```
-
-Notice how for each conditional, we are doing an equality test. Given that, we can convert the above to the following equivalent switch statement:
-
-
-
-
-```javascript
-let food = 'apple';
+const food = 'apple';
 
 switch(food) {
   case 'pear':
@@ -146,7 +133,6 @@ switch(food) {
     console.log('I like apples');
     break;
   case 'orange':
-  case 'clem':
     console.log('mmm... citrus');
     break;
   default:
@@ -161,14 +147,17 @@ The default clause is technically optional but in most cases it is good practice
 
 ### 🚀 Independent Practice!!
 
-Use a `switch` statement to inform us if some number `n` is prime.
+Touch a new javascript file —— `switch-practice.js` —— and work in that.
+
+Using the example above as a guide, construct a `switch` statement to inform us if some number `n` is prime.
 - If it's 1, log the message '1 is actually not prime!'
 - If it's 2, log the message '2 is the smallest prime!'
-- If it's 3, 5, or 7, log the message: '`n` is prime!'
+- If it's 3, 5, or 7, log the message: '`n` is prime!' (use string interpolation to show the value of `n` instead of the letter "n")
 - If it's 4, 6, 8, or 9, log the message: '`n` is not prime :('
 - Otherwise, log the message "idk if `n` is prime. google it, ask yourself, ask your friend."
 
-(of course you should interpolate `n` in your messages)
+Test your code in the terminal by running `node switch-practice.js`. Try it several times giving `n` different values to make sure each part of your switch statement is functioning properly. Be careful to match the proper syntax!
+
 
 # Iteration
 
@@ -184,6 +173,8 @@ while (n < 50) {
   n++
 }
 ```
+
+>note: remember that `n++` is the equivolent of `n = n + 1`, so basically it makes `n`'s value increase by 1 each time you loop through the code.
 
 You can also `break` to exit the loop before the condition is met.
 
@@ -233,6 +224,35 @@ while(i < 10) {
 ```
 
 We can implement something similar to a `for` loop with a `while` loop.
+
+### Looping through Arrays
+One of the most common ways that we'll use loops in real life is by looping through arrays — especially arrays of objects. For example, let's say that we have the following array of wizards:
+```
+const wizards = [
+  {name: "Harry Potter", house: "Gryffindor"}, 
+  {name: "Lord Voldomort", house: "Slytherin"}, 
+  {name: "Cedric Diggory", house: "Hufflepuff"},
+  {name: "Luna Lovegood", house: "Ravenclaw"},  
+  {name: "Albus Dumbledor", house: "Gryffindor"}, 
+  {name: "Merlin", house: "Slytherin"}, 
+  {name: "Pomona Sprout", house: "HufflePuff"}, 
+  {name: "Gilderoy Lockheart", house: "Ravenclaw"}, 
+  {name: "Ron Weasley", house: "Gryffindor"}, 
+  {name: "Severus Snape", house: "Slytherin"}, 
+  {name: "Nymphadora Tonks", house: "Hufflepuff"}, 
+  {name: "Padma Patil", house: "Ravenclaw"}, 
+  {name: "Hermoine Granger", house: "Gryffindor"} 
+ ]
+ ```
+ 
+If we wanted to print the name of each wizard, we could use a `for loop` to iterate through this array. To do so, we use `i` to correspond to the `index` number of each object in the array:
+```
+for(let i = 0; i < wizards.length; i++){
+    console.log(wizards[i].name)
+}
+```
+
+#### How could we combine an `if` statement with a `for loop` to print only the names of Slytherins?
 
 ## Conclusion
 - When would use conditionals? What are the different ways to tackle conditional logic?
