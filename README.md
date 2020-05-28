@@ -235,7 +235,20 @@ while(i < 10) {
 We can implement something similar to a `for` loop with a `while` loop.
 
 ### Looping through Arrays
-One of the most common ways that we'll use loops in real life is by looping through arrays — especially arrays of objects. For example, let's say that we have the following array of wizards:
+One of the most common ways that we'll use loops in real life is by looping through arrays.
+
+```javascript
+const food = ['tacos', 'burritos', 'pizza', 'soup', 'pasta']
+```
+Now we iterate over the food array.
+
+```javascript
+for(let i = 0; i < food.length; i++) {
+  console.log(food[i])
+}
+```
+
+Now for something a bit more challenging, looping through an array of objects. For example, let's say that we have the following array of wizards:
 ```
 const wizards = [
   {name: "Harry Potter", house: "Gryffindor"}, 
