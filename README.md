@@ -173,6 +173,19 @@ while (n < 50) {
   n++
 }
 ```
+A simpler version of the code broken down.
+
+```javascript
+let n = 0
+while(n < 50) {
+  if (n % 2) {
+    console.log(`${n} is odd`)
+  } else {
+    console.log(`${n} is even`)
+  }
+  n++
+}
+```
 
 >note: remember that `n++` is the equivolent of `n = n + 1`, so basically it makes `n`'s value increase by 1 each time you loop through the code.
 
@@ -188,10 +201,6 @@ while (n < 50) {
   n++
 }
 ```
-
-Similarly, we can use [`continue`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue) to "skip" the rest of the current iteration and move to the next.
-
-> How would we skip all values divisible by 7?
 
 ### [`for`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/statements/for) loops
 
