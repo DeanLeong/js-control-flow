@@ -173,6 +173,19 @@ while (n < 50) {
   n++
 }
 ```
+A simpler version of the code broken down.
+
+```javascript
+let n = 0
+while(n < 50) {
+  if (n % 2) {
+    console.log(`${n} is odd`)
+  } else {
+    console.log(`${n} is even`)
+  }
+  n++
+}
+```
 
 >note: remember that `n++` is the equivolent of `n = n + 1`, so basically it makes `n`'s value increase by 1 each time you loop through the code.
 
@@ -188,10 +201,6 @@ while (n < 50) {
   n++
 }
 ```
-
-Similarly, we can use [`continue`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue) to "skip" the rest of the current iteration and move to the next.
-
-> How would we skip all values divisible by 7?
 
 ### [`for`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/statements/for) loops
 
@@ -226,7 +235,20 @@ while(i < 10) {
 We can implement something similar to a `for` loop with a `while` loop.
 
 ### Looping through Arrays
-One of the most common ways that we'll use loops in real life is by looping through arrays — especially arrays of objects. For example, let's say that we have the following array of wizards:
+One of the most common ways that we'll use loops in real life is by looping through arrays.
+
+```javascript
+const food = ['tacos', 'burritos', 'pizza', 'soup', 'pasta']
+```
+Now we iterate over the food array.
+
+```javascript
+for(let i = 0; i < food.length; i++) {
+  console.log(food[i])
+}
+```
+
+Now for something a bit more challenging, looping through an array of objects. For example, let's say that we have the following array of wizards:
 ```
 const wizards = [
   {name: "Harry Potter", house: "Gryffindor"}, 
