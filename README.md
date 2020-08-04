@@ -58,7 +58,7 @@ When you're comparing variables to values, make sure you're using  `===` —— 
 
 ### 🚀 Independent Practice!!
 
-Touch a new javascript file —— `if-else-practice.js` —— and work in that. 
+Touch a new javascript file —— `control-flow.js` —— and work in that. 
 
 Let's see if you have enough money to buy a cat! Using the following terms, create an `if / else if / else` conditional statement:
 
@@ -147,7 +147,7 @@ The default clause is technically optional but in most cases it is good practice
 
 ### 🚀 Independent Practice!!
 
-Touch a new javascript file —— `switch-practice.js` —— and work in that.
+Now complete the following exercise in your `control-flow.js` file.
 
 Using the example above as a guide, construct a `switch` statement to inform us if some number `n` is prime.
 - If it's 1, log the message '1 is actually not prime!'
