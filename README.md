@@ -257,7 +257,7 @@ const wizards = [
   {name: "Luna Lovegood", house: "Ravenclaw"},  
   {name: "Albus Dumbledor", house: "Gryffindor"}, 
   {name: "Merlin", house: "Slytherin"}, 
-  {name: "Pomona Sprout", house: "HufflePuff"}, 
+  {name: "Pomona Sprout", house: "Hufflepuff"}, 
   {name: "Gilderoy Lockheart", house: "Ravenclaw"}, 
   {name: "Ron Weasley", house: "Gryffindor"}, 
   {name: "Severus Snape", house: "Slytherin"}, 
