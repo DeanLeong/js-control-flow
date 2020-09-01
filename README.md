@@ -66,7 +66,7 @@ Let's see if you have enough money to buy a cat! Using the following terms, crea
 - If `yourMoney` is more than `catPrice`, log the message "You can buy a cat and will have <X> dollars left over"
 - If `yourMoney` is less than `catPrice`, log the message "You cannot buy a cat.  You need <X> more dollars :("
 
-Check your code with the following variables (Remember, you can use Node to run the file in your terminal: `node if-else-practice.js`)
+Check your code with the following variables (Remember, you can use Node to run the file in your terminal: `node control-flow.js`)
 
 1) 
 ```js
